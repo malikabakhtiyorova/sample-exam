@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="siteheader">
+    <div class="container">
+      <div class="siteheader__top">
+        <h1>Lorem</h1>
+      </div>
+      <div class="siteheader__bottom">
+        <div class="logo-toggler__wrapper">
+          <div class="logo-wrapper">
+            <img src="https://picsum.photos/100/50" alt="logo">
+          </div>
+          <button class="toggler" type="button"> Open </button>
+        </div>
+        <div class="reasponsive responsive-open">
+          <h2>Lorem, ipsum.</h2>
+          <ul class="socials">
+            <li><img src="https://picsum.photos/30" alt=""></li>
+            <li><img src="https://picsum.photos/30" alt=""></li>
+            <li><img src="https://picsum.photos/30" alt=""></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="slider">
+    <div class="btns slider-btns">
+      <button type="button">
+        < </button>
+          <button type="button">></button>
+    </div>
+    <ul class="slider-list">
+      <li class="slider-list__item">
+        <img src="oversmiling.jpg" alt="rasm">
+        <div class="content">
+          <h2>Lorem ipsum dolor sit amet.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia velit impedit nobis animi? Corporis
+            doloribus qui necessitatibus sequi eum? Ut iste quo accusamus voluptas? Illo eum atque libero dignissimos
+            tempora.</p>
+          <a href="#" class="button-primary">Read more</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <script>
+    var elSiteHeader = document.querySelector('.reasponsive');
+    var elSiteHeaderToggler = document.querySelector('.toggler');
+
+
+    elSiteHeaderToggler.addEventListener('click', function () {
+      elSiteHeader.classList.toggle('responsive-open');
+      elSiteHeaderToggler.classList.toggle('hamburger-open');
+    });
+  </script>
+</body>
+
+</html>
